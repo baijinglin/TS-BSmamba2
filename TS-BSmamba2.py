@@ -10,18 +10,18 @@ class MambaBlock(nn.Module):
     def __init__(self, in_channels):
         super(MambaBlock, self).__init__()
         self.forward_mamba2 = Mamba2(
-            d_model=in_channels,  # 模型维度 d_model
-            d_state=128,  # SSM 状态扩展因子，通常为 64 或 128
-            d_conv=4,  # 局部卷积宽度
-            expand=4,# 块扩展因子
+            d_model=in_channels,  
+            d_state=128,  
+            d_conv=4,  
+            expand=4,
             headdim=64,
         )
 
         self.backward_mamba2 = Mamba2(
-            d_model=in_channels,  # 模型维度 d_model
-            d_state=128,  # SSM 状态扩展因子，通常为 64 或 128
-            d_conv=4,  # 局部卷积宽度
-            expand=4,  # 块扩展因子
+            d_model=in_channels, 
+            d_state=128,  
+            d_conv=4, 
+            expand=4,  
             headdim=64,
         )
     def forward(self, input):
@@ -300,7 +300,7 @@ class Separator(nn.Module):
 
         output = output.view(batch_size, nch, self.num_output, -1).transpose(1,2).contiguous()
         output_mask = output_mask.view(batch_size, nch, self.num_output, -1).transpose(1,2).contiguous()
-        return output,output_mask
+        return output, output_mask
     
 if __name__ == '__main__':
     model = Separator().cuda()
