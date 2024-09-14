@@ -5,13 +5,38 @@ Music source separation (MSS) aims to separate mixed music into its distinct tra
 
 # Performance
 
-<img width="938" alt="image" src="https://github.com/user-attachments/assets/6d10038f-86bb-40e3-9622-820b6f2a77f4">
+<p align="center">
+  <img width="938" alt="image" src="https://github.com/user-attachments/assets/6d10038f-86bb-40e3-9622-820b6f2a77f4">
+</p>
+
+<p align="center">
+  <img width="515" alt="image" src="https://github.com/user-attachments/assets/44fd91a7-676f-487b-80b7-230e3b60f82b">
+</p>
+
+
+# Usage
+### TS-BSMAMBA2:
+```bash
+python TS-BSmamba2.py
+```
+
+### L-TS-BSMAMBA2 (Lightweight model):   
+```bash
+python L-TS-BSmamba2.py
+```
+
+# Spectrogram Example
+<p align="center">
+<img width="796" alt="image" src="https://github.com/user-attachments/assets/cee048de-e03e-4ec2-92b6-ecb4324ec384">
+</p>
 
 # License
-
 TS-BSMAMBA2 is licensed under the Apache License 2.0.
 
 # Citication
+If you use this work in your research or project, please cite the following paper:
+
+```bibtex
 
 @misc{bai2024twostagebandsplitmamba2network,
       title={A Two-Stage Band-Split Mamba-2 Network for Music Separation}, 
@@ -20,11 +45,11 @@ TS-BSMAMBA2 is licensed under the Apache License 2.0.
       eprint={2409.06245},
       archivePrefix={arXiv},
       primaryClass={cs.SD},
-      url={https://arxiv.org/abs/2409.06245}, 
+      url={https://arxiv.org/abs/2409.06245}
 }
+```
 
-
-
-
-
+# Contact
+For any questions or feedback regarding TS-BSMAMBA2, feel free to reach out to us via email:  
+[bjlin@mail.imu.edu.cn](mailto:bjlin@mail.imu.edu.cn)
 
