@@ -24,6 +24,18 @@ python TS-BSmamba2.py
 ```bash
 python L-TS-BSmamba2.py
 ```
+# Audio Samples-- Arise - Run Run Run
+You can download them using the following link.</br>
+https://mega.nz/folder/qYBzXL7S#c0qBxQss-PxPue27YqCdfA</br></br>
+Note:
+{track} = 'vocals, bass, drums, other'
+- id3_{track}.wav: Target
+- id3_mixture_{track}.wav: SIMO BSRNN results
+- id3_mixture_{track}_mask.wav: TS-BSmamba one-stage results
+- id3_mixture_{track}_map.wav: TS-BSmamba two-stage results
+
+
+
 
 # Spectrogram Example
 <p align="center">
