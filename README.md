@@ -31,8 +31,8 @@ Note:
 {track} = 'vocals, bass, drums, other'
 - id3_{track}.wav: Target
 - id3_mixture_{track}.wav: SIMO BSRNN results
-- id3_mixture_{track}_mask.wav: TS-BSmamba one-stage results
-- id3_mixture_{track}_map.wav: TS-BSmamba two-stage results
+- id3_mixture_{track}_mask.wav: TS-BSmamba2 one-stage results
+- id3_mixture_{track}_map.wav: TS-BSmamba2 two-stage results
 
 
 
